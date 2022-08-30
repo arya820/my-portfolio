@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* reused properties */
+
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    padding: 10px;
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+article {
+    padding: 0 20px 30px;
+    font-weight: 300;
+}
+.button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.button.btn-primary {
+    background-color: #3D2C8D;
+    color: white;
+    font-size: 1rem;
+}
+.button.btn-secondary {
+    border: 1px solid #3D2C8D;
+    background-color: #EEE;
+    color: #6952EA;
+    font-size: 1rem;
+}
+.button.btn-secondary:hover {
+    background-color: #6952EA;
+    color: #EEE;
+}
+.button.button.btn-primary:hover{
+    background-color: #6952EA;
+}
+.hidden {
+    visibility: hidden;
+}
+
+.icon {
+    width: 54px;
+    height: 54px;
+}
+hr {
+    margin: 25px auto 15px;
+    width: 20%;
+    border-top: 5px dotted #0F044C;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    margin: 0 auto;
+}
+.container .col {
+    display: flex;
+    flex-direction: column;
+}
+.container .col .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-active {
+    background-color: #6952EA;
+    color: #EEE;
+    border: 1px solid #6952EA;
+}
+/* customize properties */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F044C;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px 100px;
+    background-color: #0F044C;
+}
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+header .navigation ul.list-menu {
+    list-style: none;
+
+}
+header .navigation ul li {
+    padding-left: 50px;
+}
+header .navigation .toggle-menu,
+header .navigation .exit-button {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    display: none;
+    align-items: center;
+    height: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+header .navigation .toggle-menu span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #EEE;
+    border-radius: 3px;
+}
+
+main .front-page {
+    position: relative;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.front-page h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.front-page h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#about {
+    position: relative;
+    height: 100vh;
+    background-color: white;
+    padding: 0 100px;
+}
+
+#about .card {
+    width: 500px;
+    background-color: #1C0C5B;
+    box-shadow: 5px 10px 8px #333;
+    border-radius: 30px;
+    color: #EEEEEE;
+}
+#about .card h4{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 20px 20px;
+}
+
+#experiences {
+    position: relative;
+    padding: 100px;
+    flex-direction: column;
+}
+#experiences h4 {
+    margin-bottom: 50px;
+}
+#experiences .tab-exp {
+    background-color: #EEE;
+    color: #2209B3;
+    width: 70%;
+}
+#experiences .tab-exp .tab-head button{
+    flex-basis: 25%;
+    cursor: pointer;
+    min-height: 60px;
+}
+#experiences .tab-exp .tab-content {
+    position: relative;
+    height: 100%;
+    margin: 50px;
+}
+#experiences .tab-exp .tab-content .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#experiences .tab-exp .tab-content .col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+#experiences .tab-exp .tab-content .col .row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+#experiences .tab-exp .tab-content .col .row a {
+    color: #333;
+}
+#experiences .tab-exp .tab-content .col .row .item{
+    flex-basis: 50%;
+}
+
+#experiences .tab-exp .tab-content .col .row .item.align-right {
+    text-align: right;
+}
+
+#skills {
+    position: relative;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#skills .container .col .row .circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-color: #6952EA;
+    margin: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#skills .container .col .row .circle p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+#skills .container .col .row .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    margin: 20px 10px;
+}
+
+
+#projects {
+    background-color: #EEE;
+    color: #2209B3;
+    position: relative;
+    padding: 100px;
+    flex-direction: column;
+}
+#projects .container .col .row .card{
+    margin: 20px;
+    max-width: 300px;
+    min-height: 330px;
+    border: 1px solid black;
+    border-radius: 5%;
+    position: relative;
+}
+#projects .container .col .row .card .project-card {
+    flex-direction: column;
+    padding: 20px;
+}
+#projects .container .col .row .card .project-card img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+#projects .container .col .row .card .project-card .button {
+    margin: 10px auto;
+    
+}
+
+#contact-form {
+    padding: 70px 100px;
+}
+#contact-form h4 {
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+}
+#contact-form .contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+#contact-form .contact-info .message-form {
+    display: flex;
+    flex-grow: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#contact-form .contact-info .message-form .form-group {
+    padding: 20px 50px;
+    
+}
+#contact-form .message-form .form-group label {
+    display: block;
+    padding-bottom: 10px;
+}
+#contact-form .message-form .form-group input {
+    width: 100%;
+    height: 50px;
+    background-color: #0F044C;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #EEE;
+
+}
+#contact-form .message-form .form-group textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+#contact-form .contact-info .location {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+
+aside {
+    position: sticky;
+    z-index: 320;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside .aside-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+aside .aside-content .aside-shadow{
+    width: 98.7vw;
+    height: 100vh;
+    background-color: #333;
+    opacity: 0.5;
+}
+aside .aside-content .aside-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3D2C8D;
+    width: 30vw;
+    height: 100vh;
+    padding: 100px 50px;
+    z-index: 30;
+}
+aside .aside-content .aside-item button {
+    display: block;
+    margin-left: auto;
+}
+aside .aside-content .aside-item figure {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+aside .aside-content .aside-item figure img {
+    width: 128px;
+    margin: 25px auto;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+    .exit-button {
+        display: none;
+    }
+    header {
+        padding: 20px;
+    }
+    header .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    header .navigation .toggle-menu {
+        display: flex;
+    }
+    header .navigation ul.list-menu {
+        display: none;
+        flex-direction: column;
+    }
+    header .navigation ul.list-menu li {
+        padding: 10px 0;
+    }
+    aside .aside-content .aside-shadow {
+        display: none;
+    }
+    aside .aside-content .aside-item {
+        left: 0;
+        width: 100vw;
+    }
+    #about {
+        padding: 0 20px;
+    }
+    #experiences {
+        padding: 20px;
+    }
+    #experiences .tab-exp {
+        width: 100%;
+    }
+    #skills {
+        margin: 20px 10px;
+    }
+    #projects {
+        padding: 20px;
+    }
+    #contact-form {
+        padding: 50px 20px;
+    }
+}

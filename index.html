@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Duta Dias - My Portfolio</title>
+
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+    <aside id="sidebar" class="hidden flex-center">
+        <div class="aside-content">
+            <div class="aside-shadow"></div>
+            <div class="aside-item">
+                <button class="button btn-secondary" id="closeSidebar">Close</button>
+                <figure>
+                    <img src="assets/images/arya.png" alt="profile-pic">
+                    <figcaption>Arya Duta Dias</figcaption>
+                    <figcaption><a href="">aryadutadias@gmail.com</a></figcaption>
+                </figure>
+            </div>
+
+        </div>
+    </aside>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <h1 class=""><a href="#">Arya D. Dias</a></h1>
+            </div>
+            <ul class="list-menu flex-center">
+                <li class=""><a href="#about">About</a></li>
+                <li class=""><a href="#experiences">Experiences</a></li>
+                <li class=""><a href="#skills">Skills</a></li>
+                <li class=""><a href="#projects">Projects</a></li>
+                <li class="">
+                    <button class="aside-button button btn-primary">My Bio</button>
+                </li>
+            </ul>
+            <div class="toggle-menu open-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="exit-button exit-menu" onclick="exitMenu()">
+                <p>Close</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="front-page flex-center">
+            <h1>Hi, I'm Arya</h1>
+            <h3>A Fullstack Web Developer & Cybersecurity Enthusiast</h3>
+            <a href="#about" class="button btn-primary">Who am I?</a>
+        </section>
+        <section id="about" class="flex-center">
+            <div class="card">
+                <h4>About</h4>
+                <article>A Fresh Graduate of Computer Science Bachelor Degree. Interested in Computer Technologies, especially Cybersecurity and Software Engineering field with a focus in Web Development. Ready to complete work related to software engineering and IT troubleshooting.</article>
+            </div>
+        </section>
+        <section id="experiences" class="flex-center">
+            <h4>My Experiences</h4>
+            <article>I Have Experiences from College, Courses, Training, Certification, and Work Experiences</article>
+            <div class="tab-exp">
+                <div class="tab-head flex-center">
+                    <button id="education-tab" class="tab-active" onclick="tabExp('education')">Education</button>
+                    <button id="training-tab" onclick="tabExp('training')">Courses & Training</button>
+                    <button id="certification-tab" onclick="tabExp('certification')">Certification</button>
+                    <button id="works-tab" onclick="tabExp('works')">Works</button>
+                </div>
+                <div class="tab-content">
+                    <div id="education" class="">
+                        <div class="col">
+                            <div class="row">
+                                <p class="item">Bachelor's Degree of Computer Science</p>
+                                <p class="item align-right">August 2017 - December 2021</p>
+                            </div>
+                            <div class="row">
+                                <p class="item">University of North Sumatera (Universitas Sumatera Utara)</p>
+                                <p class="item align-right">GPA: 3.57</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <ul>
+                                    <li>My final undergraduate paper has published in IEEE through 2021 International Conference on Data Science, Artificial Intelligence, and Business Analytics (DATABIA) entitled: <a href="https://ieeexplore.ieee.org/document/9650121">Securing the Integrity of PDF Files using RSA Digital Signature and SHA-3 Hash Function</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                           
+                    </div>
+                    <div id="training" class="content hidden">
+                        <div class="col">
+                            <div class="row">
+                                <p class="item">Google IT Support</p>
+                                <p class="item align-right">June - July 2022</p>
+                            </div>
+                            <div class="row">
+                                <p class="item">Fresh Graduate Academy: Digital Talent Scolarship KOMINFO</p>
+                                <p class="item align-right">Training</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col">
+                            <div class="row">
+                                <p class="item">Cyber Novice: Ethical Hacking Essentials</p>
+                                <p class="item align-right">March - April 2022</p>
+                            </div>
+                            <div class="row">
+                                <p class="item">Fresh Graduate Academy: Digital Talent Scolarship KOMINFO</p>
+                                <p class="item align-right">Training</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col">
+                            <div class="row">
+                                <p class="item">Belajar Dasar AWS Cloud</p>
+                            </div>
+                            <div class="row">
+                                <p class="item">Dicoding</p>
+                                <p class="item align-right">Courses</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col">
+                            <div class="row">
+                                <p class="item">Ethical Hacking from Scratch</p>
+                            </div>
+                            <div class="row">
+                                <p class="item">Udemy</p>
+                                <p class="item align-right">Courses</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="certification" class="content hidden">
+                        <div class="col">
+                            <div class="row">
+                                <p class="item">IT Support</p>
+                            </div>
+                            <div class="row">
+                                <p class="item">Google & Coursera</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <p class="item">Ethical Hacking Essentials v1</p>
+                                <p class="item align-right">Expired: April 2025</p>
+                            </div>
+                            <div class="row">
+                                <p class="item">EC-Council</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="works"class="content hidden">
+                        <div class="col">
+                            <div class="row">
+                                <p class="item">Front-end Web Developer Intern</p>
+                                <p class="item align-right">June - Sept 2020</p>
+                            </div>
+                            <div class="row">
+                                <p class="item">PT. Nusantara I/C/T</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <ul>
+                                    <li>Worked with another intern to build a Minimum Viable Product about Web Dashboard System and CRUD for tracking Elementary Student’s Activities in School using HTML, CSS, PHP, Laravel Framework, and integrating it with MySQL Database.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="center">
+            <h4>My Skills</h4>
+            <h5>Job Skills</h5>
+            <article>I can do any Job related to Software Engineering Field & Cybersecurity Field.</article>
+            <div class="container">
+                <div class="col">
+                    <div class="row">
+                        <div class="circle">
+                            <p>70%</p>
+                            <h6>Front-end Web Developer</h6>
+                        </div>
+                        <div class="circle">
+                            <p>80%</p>
+                            <h6>Back-end Web Developer</h6>
+                        </div>
+                        <div class="circle">
+                            <p>75%</p>
+                            <h6>Software Engineer /</h6>
+                            <h6>Fullstack Web Developer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="circle">
+                            <p>80%</p>
+                            <h6>Cybersecurity</h6>
+                            <h6>Fundamental</h6>
+
+                        </div>
+                        <div class="circle">
+                            <p>90%</p>
+                            <h6>Bahasa Indonesia</h6>
+                        </div>
+                        <div class="circle">
+                            <p>75%</p>
+                            <h6>English</h6>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <h5>Technologies</h5>
+            <article>It's a technologies what Im used for jobs.</article>
+            <div class="container">
+                <div class="col">
+                    <div class="row">
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/108784/javascript" title="JavaScript icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-javascript.svg" alt="javascript">
+                            </a>
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/anECpXcEIboQ/php-logo" title="PHP icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-php-logo.svg" alt="php">
+                            </a>
+                            <figcaption>PHP</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/23027/html-5" title="Html 5 icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-html-5.svg" alt="html5">
+                            </a>
+                            <figcaption>HTML5</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/21278/css3" title="CSS3 icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-css3.svg" alt="css3">
+                            </a>
+                            <figcaption>CSS3</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/84710/bootstrap" title="Bootstrap icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-bootstrap.svg" alt="bootstrap">
+                            </a>
+                            <figcaption>Bootstrap</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/QBqFNfPPB2Kx/sass" title="Sass icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-sass.svg" alt="sass">
+                            </a>
+                            <figcaption>SASS</figcaption>
+                        </figure>
+                
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <figure class="item">
+                            <a href="" title="TypeScript icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-typescript.svg" alt="typescript">
+                            </a>
+                            <figcaption>TypeScript</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/hsPbhkOH4FMe/node-js" target="_blank" title="Node Js icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-node-js.svg" alt="nodejs">
+                            </a>
+                            <figcaption>NodeJS</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/74402/mongodb" title="MongoDB icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-mongodb.svg" alt="mongodb">
+                            </a>
+                            <figcaption>MongoDB</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/hsPbhkOH4FMe/node-js" target="_blank" title="Node Js icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-node-js.svg" alt="expressjs">
+                            </a>
+                            <figcaption>ExpressJS</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/123603/react-native" title="React icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-react-native.svg" alt="react">
+                            </a>
+                            <figcaption>ReactJS</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/yUdJlcKanVbh/next.js" title="Next.js icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-next.js.svg" alt="nextjs">
+                            </a>
+                            <figcaption>Next.Js</figcaption>
+                        </figure>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/108825/laravel" title="Laravel icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-laravel-50 (1).png" alt="laravel">
+                            </a>
+                            <figcaption>Laravel</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/9nLaR5KFGjN0/mysql-logo" title="MySQL Logo icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-mysql-logo.svg" alt="mysql">
+                            </a>
+                            <figcaption>MySQL</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/zfHRZ6i1Wg0U/figma" title="Figma icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-figma.svg" alt="figma">
+                            </a>
+                            <figcaption>Figma</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/20906/git" title="Git icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-git.svg" alt="git">
+                            </a>
+                            <figcaption>Git</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/106562/github" title="GitHub icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-github.svg" alt="github">
+                            </a>
+                            <figcaption>Github</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/40253/jquery" title="JQuery icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-jquery.svg" alt="jquery">
+                            </a>
+                            <figcaption>JQuery</figcaption>
+                        </figure>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/13441/python" title="Python icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-python.svg" alt="python">
+                            </a>
+                            <figcaption>Python</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/40670/c-programming" title="C Programming icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-c-programming.svg" alt="cplus">
+                            </a>
+                            <figcaption>C/C++</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/13679/java" title="Java icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-java.svg" alt="java">
+                            </a>
+                            <figcaption>Java</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="https://icons8.com/icon/17842/linux" title="Linux icon by Icons8">
+                                <img class="icon" src="assets/images/icon/icons8-linux-96.png" alt="linux">
+                            </a>
+                            <figcaption>Linux</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="" title="Nmap">
+                                <img class="icon" src="assets/images/icon/nmap-logo-64px.svg" alt="nmap">
+                            </a>
+                            <figcaption>Nmap</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <a href="" title="Metasploit">
+                                <img class="icon" src="assets/images/icon/metasploit.png" alt="metasploit">
+                            </a>
+                            <figcaption>Metasploit</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="projects" class="flex-center">
+            <h4>My Projects</h4>
+            <p>My Best Projects</p>
+            <div class="container">
+                <div class="col">
+                    <div class="row">
+                        <div class="card">
+                            <figure class="project-card flex-center">
+                                <img class="image" src="assets/images/tauyuk-project.png" alt="tauyuk">
+                                <figcaption>TauYuk</figcaption>
+                                <button class="button btn-secondary">Description</button>
+                            </figure>
+                        </div>
+                        <div class="card">
+                            <figure class="project-card flex-center">
+                                <img class="image" src="assets/images/rsa-ds-project.png" alt="rsads">
+                                <figcaption>RSA Digital Signature Algorithm Implementation</figcaption>
+                                <button class="button btn-secondary">Description</button>
+                            </figure>
+                        </div>
+                        <div class="card">
+                            <figure class="project-card flex-center">
+                                <img class="image" src="assets/images/storegg-project.png" alt="storegg">
+                                <figcaption>StoreGG Gaming Voucher Web App</figcaption>
+                                <button class="button btn-secondary">Description</button>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button btn-primary">Load More</button>
+        </section>
+        <section id="contact-form">
+            <h4>Contact me</h4>
+            <article style="text-align: center;">If you want to hire me, please fill this form.</article>
+            <div class="contact-info">
+                <form action="" class="message-form">
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" placeholder="Insert Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">Email</label>
+                        <input type="text" placeholder="Insert Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">Message</label>
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="button btn-secondary">Send</button>
+                    </div>
+                </form>
+                <div class="location">
+                    <p>Location: Medan, Indonesia</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <p>Created by Arya Duta Dias &#169; 2022, </p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
+
